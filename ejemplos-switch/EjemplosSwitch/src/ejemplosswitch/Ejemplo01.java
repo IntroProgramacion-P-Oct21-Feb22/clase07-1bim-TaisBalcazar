@@ -34,7 +34,7 @@ public class Ejemplo01 {
         valor2 = entrada.nextInt();
         
         resultado = 0;
-        
+         
         // 10. Escribir "Seleccione la operación que desea realizar"
         // 11. Escribir "Ingrese 1 para sumar"
         // 12. Escribir "Ingrese 2 para restar"
@@ -44,6 +44,8 @@ public class Ejemplo01 {
                 + "Ingrese 2 para restar\n"
                 + "Ingrese 3 para multiplicar");
         op = entrada.nextInt();
+        
+        if (valor1 > 20 && valor2 >= 20){
         
         switch(op){
             // Opcion 1 // si op es igual a 1; se realiza las instrucciones
@@ -64,8 +66,14 @@ public class Ejemplo01 {
             default:
                 System.out.println("Operación incorrecta");
                 break;
-             
-        }
+                
+             }
+        
+        } else{
+                System.out.println("Valor fuera de rango");
+              
+            }
+       
         // Escribir "El resultado de la operación es :" + resultado
         System.out.printf("El resultado de la operación es : %d\n", resultado);
     }

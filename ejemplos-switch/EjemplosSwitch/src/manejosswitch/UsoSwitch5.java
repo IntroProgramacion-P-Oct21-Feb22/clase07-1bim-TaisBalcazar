@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author TaisBalcazar
  */
-public class UsoSwitch {
+public class UsoSwitch5 {
 
     /**
      * @param args the command line arguments
@@ -20,21 +20,18 @@ public class UsoSwitch {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
         entrada.useLocale(Locale.US);
-        System.out.println("Ingrese el nombre del día de la semana");
+        System.out.println("Ingrese el nombre de su ciudad");
         String cadena = entrada.nextLine();
         
         switch(cadena){
-            case "Lunes":
-                System.out.printf("%s", cadena);
+            case "Quito":
+            case "quito":
+            case "QUITO":
+                System.out.printf("Bienvenidos a las artes vivas");
                 break;
-            
-            case "Martes":
-            case "martes":
-                System.out.printf("%s", cadena);
-                break;    
-            
+     
             default:
-                System.out.println("ninguna de las anteriores");
+                System.out.println("Opción equivocada");
                 break;
         }
         
